@@ -1,0 +1,9 @@
+only if you typed password + secend 1200 500 than you maydont Type: walletlock in console window to lock your wallet back.
+private key export
+
+To get private key of all your address follow these steps
+
+Exporting all private keys | Dump wallet
+Follow the first 3 steps from above. Once you have the wallet unlocked type: dumpwallet “bitcoinkeys” in console window and hit enter.
+
+The wallet will export all the private keys in a single file (WIF format) and it will return the file path.

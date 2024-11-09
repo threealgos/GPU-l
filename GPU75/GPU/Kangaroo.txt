@@ -1,0 +1,170 @@
+Thank you for visiting my channel! I boosted the audio and reuploaded this video so hopefully everyone can hear me more clearly. 
+
+How to attack the Secp256k1 (Bitcoin) curve with Pollard's Kangaroo & Vast.ai for beginners
+
+Hello fellow person on youtube,
+Apologies for anything I left out or any errors made. If anyone needs help reach out in the comment section and 
+I'll do my best to help if I can.
+
+This is my first tutorial video or any video of myself on yt! I was hesitant to post this but think its important for as many people as possible to be learning about cryptography, elliptical curves and hashing functions.
+
+Pollard's kangaroo utilizes the pollard rho theorem to generate points on an elliptical curve based on secp256k1 
+It reduces the difficulty to the square root and is the only publicly known method for 'cracking' private keys from 
+the public keys. 
+
+It has been proven effective against many puzzle transactions and is currently stuck at 2 to the 119 to 2 to the 120th power.
+
+Brute forcing the BitCrack method has been stuck at 2 to the 63 to 2 to the 64th power!
+
+I will leave some of the basic commands here so you may copy paste them if you desire. 
+Oh and I didn't mention the distinguished points and the command -d (-d 32, -d 50 etc.)
+I suggest checking out the forum linked in jean luc pons github. 
+
+apt update
+apt upgrade 
+apt install git
+apt install make
+apt install nano
+mkdir btc
+cd btc 
+git clone https :// github .com /JeanLucPons /Kangaroo
+cd Kangaroo
+nano Makefile
+
+[edit cuda path by removing the cuda version and g++ versions as shown]
+[compile the program with the command below. The number 86 is the compute cap for an RTX3090]
+
+make gpu=1 ccap=86 all
+
+Test your build with the following :
+
+./kangaroo -l
+
+this will list the cuda devices showing it has gpu support.
+Next run the stock in.txt file to see that it completes the operation successfully.
+Upon completion you may then modify the in.txt file to reflect the keyspace and public key of your liking.
+
+Invoke kangaroo with this command modified to match your gpu count:
+
+./kangaroo -gpu -gpuId 0,1,2,3,4,5,6,7 -ws -w save.work -wi 3000 in.txt
+
+
+There you all go I hope someone cracks 120 with this and do not use this for nefarious activities.
+You will probably just waste electricity.
+
+Feel free to share the love if it works for you =D
+
+Oh and for anyone just learning remember the private key found by this program will be a hex number you will need to pad it to 64 bits with zeros then convert it to WIF and import it into your wallet of choice. I highly recommend utilizing Electrum. 
+
+one love,
+~sully.mane
+
+
+
+Music By: "KaizanBlu"
+Track Name: "Daydream"
+• Instagram - https://www.instagram.com/kaizanblu/
+• SoundCloud - https://soundcloud.com/kaizanblu/
+• Facebook - https://www.facebook.com/kaizanblumusic/
+• TikTok - @kaizanblu http://vm.tiktok.com/aCYwfx/
+• YouTube - https://www.youtube.com/channel/UCUtx...
+• DOWNLOAD @ https://www.chilloutrecordsmusic.com
+Licence: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+- Full licence here: https://creativecommons.org/licenses
+• Music released by: Chill Out Records @ https://goo.gl/fh3rEJ
+
+&
+
+► Music Credit: LAKEY INSPIRED
+Track Name: "Blue Boi"
+Music By: LAKEY INSPIRED @ https://soundcloud.com/lakeyinspired
+Original upload HERE - https://www.youtube.com/watch?v=wAukv...
+Official "LAKEY INSPIRED" YouTube Channel HERE - https://www.youtube.com/channel/UCOmy...
+License for commercial use: Creative Commons Attribution 3.0 Unported "Share Alike" (CC BY-SA 3.0) License.
+Full License HERE - https://creativecommons.org/licenses/...
+Music promoted by NCM https://goo.gl/fh3rEJ
+=================================================================================================================================================
+How to attack the Secp256k1 (Bitcoin) curve with Pollard's Kangaroo & Vast.ai for beginners
+
+Hello fellow person on youtube,
+Apologies for anything I left out or any errors made. If anyone needs help reach out in the comment section and 
+I'll do my best to help if I can.
+
+This is my first tutorial video or any video of myself on yt! I was hesitant to post this but think its important
+for as many people as possible to be learning about cryptography, elliptical curves and hashing functions.
+
+Pollard's kangaroo utilizes the pollard rho theorem to generate points on an elliptical curve based on secp256k1 
+It reduces the difficulty to the square root and is the only publicly known method for 'cracking' private keys from 
+the public keys. 
+
+It has been proven effective against many puzzle transactions and is currently stuck at 2 to the 119 to 2 to the 120th power.
+
+Brute forcing the BitCrack method has been stuck at 2 to the 63 to 2 to the 64th power!
+
+I will leave some of the basic commands here so you may copy paste them if you desire. 
+Oh and I didn't mention the distinguished points and the command -d (-d 32, -d 50 etc.)
+I suggest checking out the forum linked in jean luc pons github. 
+
+apt update
+apt upgrade 
+apt install git
+apt install make
+apt install nano
+mkdir btc
+cd btc 
+git clone https :// github .com /JeanLucPons /Kangaroo
+cd Kangaroo
+nano Makefile
+
+[edit cuda path by removing the cuda version and g++ versions as shown]
+[compile the program with the command below. The number 86 is the compute cap for an RTX3090]
+
+make gpu=1 ccap=86 all
+
+Test your build with the following :
+
+./kangaroo -l
+
+this will list the cuda devices showing it has gpu support.
+Next run the stock in.txt file to see that it completes the operation successfully.
+Upon completion you may then modify the in.txt file to reflect the keyspace and public key of your liking.
+
+Invoke kangaroo with this command modified to match your gpu count:
+
+./kangaroo -gpu -gpuId 0,1,2,3,4,5,6,7 -ws -w save.work -wi 3000 in.txt
+
+
+There you all go I hope someone cracks 120 with this and do not use this for nefarious activities.
+You will probably just waste electricity.
+
+Feel free to share the love if it works for you =D
+
+Oh and for anyone just learning remember the private key found by this program will be a hex number you will need to pad it to 64 bits with zeros then convert it to WIF and import it into your wallet of choice. I highly recommend utilizing Electrum. 
+
+May you have great odds,
+~sully.mane
+
+
+
+Music By: "KaizanBlu"
+Track Name: "Daydream"
+• Instagram - https://www.instagram.com/kaizanblu/
+• SoundCloud - https://soundcloud.com/kaizanblu/
+• Facebook - https://www.facebook.com/kaizanblumusic/
+• TikTok - @kaizanblu http://vm.tiktok.com/aCYwfx/
+• YouTube - https://www.youtube.com/channel/UCUtx...
+• DOWNLOAD @ https://www.chilloutrecordsmusic.com
+Licence: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+- Full licence here: https://creativecommons.org/licenses
+• Music released by: Chill Out Records @ https://goo.gl/fh3rEJ
+
+&
+
+► Music Credit: LAKEY INSPIRED
+Track Name: "Blue Boi"
+Music By: LAKEY INSPIRED @ https://soundcloud.com/lakeyinspired
+Original upload HERE - https://www.youtube.com/watch?v=wAukv...
+Official "LAKEY INSPIRED" YouTube Channel HERE - https://www.youtube.com/channel/UCOmy...
+License for commercial use: Creative Commons Attribution 3.0 Unported "Share Alike" (CC BY-SA 3.0) License.
+Full License HERE - https://creativecommons.org/licenses/...
+Music promoted by NCM https://goo.gl/fh3rEJ

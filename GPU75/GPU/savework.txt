@@ -1,0 +1,37 @@
+0ef046faa81b7265003f7129825227b7ed3d442c1cf229a739440d1eb19e7033489c99dd7fb4a974d62af536ecd36fd2e4e56e7b079d57d37577a7394a301c2a004cec46
+save file in ubuntu pons@linpons:~/Kangaroo$./kangaroo -w save.work -wi 300 -o result.txt -s -d 12 in64.txt
+C:\SMARTMAINERXXX3\Kangaroo.exe -t 4 -gpu -w save.work -o C:\SMARTMAINERXXX3\result1.txt -wi 3000 in.txt
+C:\SMARTMAINERXXX3\Kangaroo.exe -t 4 -gpu -o C:\SMARTMAINERXXX3\result1.txt -wi 3000 in.txt
+C:\SMARTMAINERXXX3\Kangaroo.exe in.txt -o C:\SMARTMAINERXXX3\result1.txt
+Kangaroo.exe -ws -w save.work -wi 3000 -i save.work
+Kangaroo.exe -winfo save.work
+Start a work from scratch and save work file every 30 seconds:
+Kangaroo.exe -ws -w save.work -wi 30 in.txt
+Continue the work from save.work and save work file every 30 seconds:
+Getting info from a work file:
+Kangaroo.exe -winfo save.work
+
+When I run the program like this - https://gitlab.com/dragonmhmh/ColabRDP
+
+C:\SMARTMAINERXXX3\Kangaroo.exe -t 4 -gpu -w save.work -o C:\SMARTMAINERXXX3\result1.txt -wi 600 in.txt
+!./kangaroo -gpu -w save.work -o Result1.txt -wi 3000 in.txt
+!cd btc/Kangaroo/ && ./kangaroo -t 4 -gpu -w save.work -o Result1.txt -wi 59 in.txt 
+When I restart the program like this -
+
+C:\SMARTMAINERXXX3\Kangaroo.exe -t 4 -gpu -w save.work -o C:\SMARTMAINERXXX3\result1.txt -wi 600 -i save.work
+!./kangaroo -gpu -w save.work -o Result1.txt -wi 600 in.txt -i save.work
+!./kangaroo -t 4 -gpu 0 -w save.work -o Result1.txt -wi 59 in.txt -i save.work
+!cd btc/Kangaroo/ && ./kangaroo -t 4 -gpu -w save.work -o Result1.txt -wi 59 in.txt -i save.work
+Merge 2 work files (here the key has been solved during the merge):
+
+Kangaroo.exe -wm save1.work save2.work save3.work
+Kangaroo v1.5
+Loading: save1.work
+MergeWork: [HashTable1 2.3/5.3MB] [00s]
+Loading: save2.work
+MergeWork: [HashTable2 2.3/5.3MB] [00s]
+Merging...
+Range width: 2^56
+
+Key# 0 [1S]Pub:  0x031D91282433E664132046D25189A5FE0F64645A73494A37AB17BD6FB283AE5BA2
+       Priv: 0x3447F65ABC9F46F736A95F87B044829C8A0129D56782D635CD612C0F05F3DA03
